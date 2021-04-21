@@ -29,3 +29,12 @@ width:100%;
 height:40px;
 line-height:40px;
 }
+
+.box {
+background: brown;
+border: 5px solid black;
+heigth:260px;
+width:205px;  
+margin:1%;
+padding:1.5%;
+}
