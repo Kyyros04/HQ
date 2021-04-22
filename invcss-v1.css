@@ -1,5 +1,73 @@
+img.bg {/* regole per riempire la pagina con lo sfondo prescelto */
+min-height: 100%;
+min-width: 1024px;
+/* regole per ridimensionare l'immagine proporzionalmente */
+width: 100%;
+height: auto;		
+/* posizonamento dello sfondo */
+position: fixed;
+top: 0;
+left: 0;
+}
+
+@media screen and (max-width: 1024px){
+img.bg {
+left: 50%;
+margin-left: -512px; 
+}
+}
+
+div#contenuto {
+position: relative; 
+width: 700px;
+margin: 0 auto;
+padding: 20px;
+font-family: helvetica, arial, sans-serif;
+font-size: 10pt;
+line-height: 16pt;
+-moz-box-shadow: #000 4px 4px 10px;
+-webkit-box-shadow: #000 4px 4px 10px;
+}
+		
+body {
+/* formattazione del body, non ha effetti sullo sfondo */
+margin: 0;
+padding: 30px 0 0 0;
+}
+
+
 .table-ext {
-width:90%;
+position: relative;
+width:100%;
+}
+
+.pag {
+position: static;
+float:left; 
+margin-left:3px;
+background-color: #CD853F;
+background-image: url(sfondoinv.jpg);
+background-position: left, left;
+font-style: italic;
+padding:1px;
+margin:0px;
+width:106px;
+height:25px;
+text-align:center;
+line-height:0px;
+}
+
+.allinea { 
+float:left; 
+margin-left:1px;
+padding:4px;
+margin:1px;
+width:40px;
+height:15px;
+background-color: #CD853F;
+    border: 2px solid #A0522D;
+text-align:center;
+font-style: italic;
 }
 
 .table-ext thead th {

@@ -6,9 +6,11 @@
   <script defer="true" type="text/javascript" src="invscript-v1.js"></script>
   <link href="invcss-v1.css" rel="stylesheet" type="text/css">
   <title> Inventario</title>
-  <h1> Inventario </h1>
 </head>
 <body>
+      <img src="MainSfondo.jpg" class="bg" />
+      <div id="contenuto">
+      <div class="pag"><p size="5"><font size="5"><b>Inventario</b></font></p></div><div class="pag"><p>Status</p></div><div class="pag"><p>Grimorio</p></div><div class="pag"><p>Diario</p></div><div class="pag"><p>Mappa</p></div><div class="pag"><p>Vendor</p></div><br><span style="font-size: 32px; margin: 9px 0; display: block;"></span>
       <table id="table-ext">
 	<tbody>
 	<tr>
@@ -16,8 +18,8 @@
       <div class="divinterno">
       <table id="table-intinv">
 	<thead> 
-		<tr><th width="100" onclick='vis("All")'>All</th><th onclick='vis("Armi")'>Armi</th><th onclick='vis("Scudi")'>Scudi</th><th onclick='vis("Elmi")'>Elmi</th><th onclick='vis("Armor")'>Armor</th><th onclick='vis("Oggetti")'>Oggetti</th><th onclick='vis("Altro")'>Altro</th></tr>
-		<tr><th>Item</th><th>Qnt</th><th>Prz</th><th>add</th><th>rem</th><th>Categoria</th></tr>
+		<!--<tr><th width="100" onclick='vis("All")'>All</th><th onclick='vis("Armi")'>Armi</th><th onclick='vis("Scudi")'>Scudi</th><th onclick='vis("Elmi")'>Elmi</th><th onclick='vis("Armor")'>Armor</th><th onclick='vis("Oggetti")'>Oggetti</th><th onclick='vis("Altro")'>Altro</th></tr>--><div class="allinea" onclick='vis("All")'>All</div><div class="allinea" onclick='vis("Armi")'>Armi</div><div class="allinea" onclick='vis("Scudi")'>Scudi</div><div class="allinea" onclick='vis("Elmi")'>Elmi</div><div class="allinea" onclick='vis("Armor")'>Armor</div><div class="allinea" onclick='vis("Oggetti")'>Oggetti</div><div class="allinea" onclick='vis("Altro")'>Altro</div>
+		<tr><th width="100">Item</th><th>Qnt</th><th>Prz</th><th>add</th><th>rem</th><th>Categoria</th></tr>
 	</thead>
 	<tbody id="tabitem">
 	 	<!--
@@ -33,7 +35,7 @@
 	</tr>
 	<tr><td><!bottone per aggiungere oggetti-->
   	   <input type="button" id="accendiamo" value="nuovo item"></button>
-	   <textarea id="aggiunta" name="aggiunta" rows="1" cols"1"></textarea>
+	   <input type="text" id="aggiunta" name="aggiunta" rows="1" cols="1" size="20"/>
 	</td></tr>
 	<tr><td><!bottone per riordinare oggetti-->
   	   <input type="button" id="accendiamo1" value="riordina" onclick="riordina()"></button>
@@ -41,7 +43,7 @@
 	</td></tr>
 	</tbody>
 	</table><!--/ tabella-ext-->
-
+      </div>
 </body>
 
 </html>
