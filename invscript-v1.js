@@ -59,7 +59,7 @@ function rem(id,nome,qnt){
 
 function oss(imm){
 	var cod=imm;
-	var url= `<img src="Cards/${imm.toString()}.png" alt="Devi aver dimenticato cosa stavi cercando" height="280px">`
+	var url= `<img src="Cards/${imm.toString()}.png" alt="Devi aver dimenticato cosa stavi cercando" height="280px" width="195px">`
 	var target=document.getElementById("display");
 	target.innerHTML=url
 }
@@ -87,7 +87,7 @@ function aggiungiitem(){
 	var nodino=document.createElement("tr");
 	nodino.style.display="table-row";
 	nodino.id=n.toString()
-	var riga=`<td id="n${n.toString()}" onclick='oss("${item.nome}")'>${item.nome}</td><td id="q${n.toString()}">${item.qnt}</td><td id="p${n.toString()}">${item.prz}</td><td><input type='button' value='+' onclick='add("q	${n.toString()}","${item.nome}",document.getElementById("q${n.toString()}").innerHTML)'></button></td><td><input type='button' 	value='-' onclick='rem("q${n.toString()}","${item.nome}",document.getElementById("q${n.toString	()}").innerHTML)'></button></td><td><select name="Categoria" id="categ${n.toString()}"><option value="All" selected="selected">All</option><option value="Armi">Armi</option><option value="Scudi">Scudi</option><option value="Elmi">Elmi</option><option value="Armor">Armor</option><option value="Oggetti">Oggetti</option><option value="Altro">Altro</option></select></td></tr>`
+	var riga=`<td id="n${n.toString()}" onclick='oss("${item.nome}")'><div class="col4">${item.nome}</div></td><td id="q${n.toString()}">${item.qnt}</td><td id="p${n.toString()}">${item.prz}</td><td><input type='button' value='+' onclick='add("q	${n.toString()}","${item.nome}",document.getElementById("q${n.toString()}").innerHTML)'></button></td><td><input type='button' 	value='-' onclick='rem("q${n.toString()}","${item.nome}",document.getElementById("q${n.toString	()}").innerHTML)'></button></td><td><select name="Categoria" id="categ${n.toString()}"><option value="All" selected="selected">All</option><option value="Armi">Armi</option><option value="Scudi">Scudi</option><option value="Elmi">Elmi</option><option value="Armor">Armor</option><option value="Oggetti">Oggetti</option><option value="Altro">Altro</option></select></td></tr>`
 	padre.appendChild(nodino).innerHTML=riga
 	nom.value="";
 	document.getElementById("accendiamo").onclick="";

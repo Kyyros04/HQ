@@ -1,4 +1,6 @@
-.table-ext {width:90%;}
+.table-ext {
+width:90%;
+}
 
 .table-ext thead th {
 height:50px;
@@ -12,22 +14,29 @@ color:#fff;
 }
 
 .table-ext tbody td {
+border:1px solid brown;
 border-bottom:1px solid #ddd;
+text-align: center;
 }
 
 .divinterno{
 height:270px; 
 overflow:auto;
-width:100%;
+width:400px;
+overflow-x:auto;
+}
+
+.col4 {
+width:100px;
+word-wrap: break-word;
 }
 
 .table-intinv {
 width:100%; 
 }
 
-.table-intinv td {
-height:40px;
-line-height:40px;
+td {
+  text-align: center;
 }
 
 .box {
@@ -37,4 +46,18 @@ heigth:260px;
 width:205px;  
 margin:1%;
 padding:1%;
+}
+
+#table-ext {
+  background-image: url(sfondoinv.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+
+#divinterno {
+background image:url(invsfondo1.png);
+background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
 }
