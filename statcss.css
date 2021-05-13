@@ -87,20 +87,29 @@ a {
     height:200px;
 }
 
+.iconaimm {
+  width:26px;
+  height:26px;
+}
+
 .txteqp {
  width: 200px;
+ background: none;
 }
 
 .valeqp {
-  width: 50px;	
+  width: 50px;
+  background: none;	
 }
 .txtacc {
  width: 200px;
  height:50px;
+ background: none;
 }
 .valacc{
  width: 50px;
  height:50px;
+ background: none;
 }
 
 .boxstats {
@@ -117,11 +126,13 @@ a {
 
 .valstat {
  width:25px;
+ background: none;
 }
 
 .talstat {
  width:150px;
- height:50px
+ height:50px;
+ background: none;
 }
 
 .boxoggrap {
@@ -154,6 +165,7 @@ a {
 
 .valpar {
   width:150px;
+  background: none;
 }
 
 .marg {

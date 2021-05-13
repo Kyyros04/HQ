@@ -123,12 +123,13 @@ td {
 }
 
 .box {
+position:static;
 background: brown;
 border: 5px solid black;
-heigth:260px;
-width:205px;  
+height:300px;
+width:215px;  
 margin:1%;
-padding:1%;
+padding:0%;/*va tolto*/
 }
 
 .boxdiario {
@@ -158,4 +159,17 @@ background-position: right bottom, left top;
 a {
   text-decoration: none;
   color:black;
+}
+
+select {
+  background: none;
+}
+
+input{
+  background: brown;
+}
+
+
+input#aggiunta {
+  background: none;
 }
