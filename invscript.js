@@ -59,7 +59,7 @@ function rem(id,nome,qnt){
 
 function oss(imm){
 	var cod=imm;
-	var url= `<img src="Cards/${imm.toString()}.png" alt="Devi aver dimenticato cosa stavi cercando" height="280px" width="195px">`
+	var url= `<img src="cards/${imm.toString()}.png" alt="Devi aver dimenticato cosa stavi cercando" height="280px" width="195px">`
 	var target=document.getElementById("display");
 	target.innerHTML=url
 }
