@@ -1,0 +1,175 @@
+img.bg {/* regole per riempire la pagina con lo sfondo prescelto */
+min-height: 100%;
+min-width: 1024px;
+/* regole per ridimensionare l'immagine proporzionalmente */
+width: 100%;
+height: auto;		
+/* posizonamento dello sfondo */
+position: fixed;
+top: 0;
+left: 0;
+}
+
+@media screen and (max-width: 1024px){
+img.bg {
+left: 50%;
+margin-left: -512px; 
+}
+}
+
+div#contenuto {
+position: relative; 
+width: 700px;
+margin: 0 auto;
+padding: 20px;
+font-family: helvetica, arial, sans-serif;
+font-size: 10pt;
+line-height: 16pt;
+-moz-box-shadow: #000 4px 4px 10px;
+-webkit-box-shadow: #000 4px 4px 10px;
+}
+		
+body {
+/* formattazione del body, non ha effetti sullo sfondo */
+margin: 0;
+padding: 30px 0 0 0;
+}
+
+
+.table-ext {
+position: relative;
+width:100%;
+}
+
+.pag {
+position: static;
+float:left; 
+margin-left:3px;
+background-color: #CD853F;
+background-image: url(sfondi/sfondointerno.jpg);
+background-position: left, left;
+font-style: italic;
+padding:1px;
+margin:0px;
+width:106px;
+height:25px;
+text-align:center;
+line-height:0px;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+#table-ext {
+  background-image: url(sfondi/sfondointerno.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 0px; /*diverso tra div e tab quindi 0*/
+  width:700px;
+  height:400px;
+  display:grid;
+  grid-template-columns: 10px 300px 200px;
+  grid-template-rows: 10px 180px 180px;
+  grid-gap:10px;
+}
+
+.boxequip {
+    display: grid;
+    grid-template-columns: 30px 200px 50px;
+    grid-template-rows: 20px repeat(5,15px);
+    gap: 10px;
+    grid-gap: 10px;
+    text-align:center;
+    //border: 1px solid black;
+    width:320px;
+    height:200px;
+}
+
+.iconaimm {
+  width:26px;
+  height:26px;
+}
+
+.txteqp {
+ width: 200px;
+ background: none;
+}
+
+.valeqp {
+  width: 50px;
+  background: none;	
+}
+.txtacc {
+ width: 200px;
+ height:50px;
+ background: none;
+}
+.valacc{
+ width: 50px;
+ height:50px;
+ background: none;
+}
+
+.boxstats {
+    display: grid;
+    grid-template-columns: 150px 50px;
+    grid-template-rows: 20px repeat(5,15px);
+    gap: 10px;
+    grid-gap: 10px;
+    text-align:center;
+    //border: 1px solid black;
+    width:320px;
+    height:170px;
+}
+
+.valstat {
+ width:25px;
+ background: none;
+}
+
+.talstat {
+ width:150px;
+ height:50px;
+ background: none;
+}
+
+.boxoggrap {
+    display: grid;
+    grid-template-columns: 30px 200px;
+    grid-template-rows: 20px repeat(4,15px);
+    gap: 10px;
+    grid-gap: 10px;
+    text-align:center;
+    //border: 1px solid black;
+    width:270px;
+    height:140px;
+}
+
+.iconaoggrap {
+  width:20px;
+}
+
+.boxparametri {
+    display: grid;
+    grid-template-columns: 150px 50px;
+    grid-template-rows: 20px repeat(5,15px);
+    gap: 10px;
+    grid-gap: 10px;
+    text-align:center;
+    //border: 1px solid black;
+    width:320px;
+    height:170px;
+}
+
+.valpar {
+  width:150px;
+  background: none;
+}
+
+.marg {
+  display:grid;
+  width:10px;
+  height:10px;
+}

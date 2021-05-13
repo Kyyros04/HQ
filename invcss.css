@@ -1,0 +1,176 @@
+img.bg {/* regole per riempire la pagina con lo sfondo prescelto */
+min-height: 100%;
+min-width: 1024px;
+/* regole per ridimensionare l'immagine proporzionalmente */
+width: 100%;
+height: auto;		
+/* posizonamento dello sfondo */
+position: fixed;
+top: 0;
+left: 0;
+}
+
+@media screen and (max-width: 1024px){
+img.bg {
+left: 50%;
+margin-left: -512px; 
+}
+}
+
+div#contenuto {
+position: relative; 
+width: 700px;
+margin: 0 auto;
+padding: 20px;
+font-family: helvetica, arial, sans-serif;
+font-size: 10pt;
+line-height: 16pt;
+-moz-box-shadow: #000 4px 4px 10px;
+-webkit-box-shadow: #000 4px 4px 10px;
+}
+		
+body {
+/* formattazione del body, non ha effetti sullo sfondo */
+margin: 0;
+padding: 30px 0 0 0;
+}
+
+
+.table-ext {
+position: relative;
+width:100%;
+}
+
+.pag {
+position: static;
+float:left; 
+margin-left:3px;
+background-color: #CD853F;
+background-image: url(sfondi/sfondointerno.jpg);
+background-position: left, left;
+font-style: italic;
+padding:1px;
+margin:0px;
+width:106px;
+height:25px;
+text-align:center;
+line-height:0px;
+}
+
+.allineariga {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 70px;;
+}
+.allinea { 
+float:left; 
+margin-left:1px;
+margin:1px;
+width:35px;
+}
+
+.iconainv{
+  width:40px;
+  height:40px;
+}
+
+.table-ext thead th {
+height:50px;
+line-height:50px;
+border-bottom:1px solid #ddd;
+text-align: left;
+border:1px solid #ddd;
+padding: 0 0 0 5px;
+background: #f04;
+color:#fff;
+}
+
+.table-ext tbody td {
+border:1px solid brown;
+border-bottom:1px solid #ddd;
+text-align: center;
+}
+
+.divinterno{
+position: relative;
+margin: 0 auto;
+height:270px;
+width:400px;
+overflow:auto;
+overflow-x:auto;
+border: 3px solid brown;
+}
+
+.divdiario{
+height:270px; 
+overflow:auto;
+width:170px;
+overflow-x:auto;
+border: 1px solid black;
+}
+
+.col4 {
+width:200px;
+word-wrap: break-word;
+}
+
+.coldiario {
+width:130px;
+word-wrap: break-word;
+text-align: left;
+}
+
+.table-intinv {
+width:100%; 
+}
+
+
+td {
+  text-align: center;
+}
+
+.box {
+position:static;
+background: brown;
+border: 5px solid black;
+height:300px;
+width:215px;  
+margin:1%;
+padding:0%;/*va tolto*/
+}
+
+.boxdiario {
+background: none;
+border: 3px solid black;
+width:600px;  
+margin:1%;
+padding:1%;
+}
+
+#table-ext {
+  background-image: url(sfondi/sfondointerno.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+  width:700px;
+  height:400px;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+select {
+  background: none;
+}
+
+input{
+  background: brown;
+}
+
+
+input#aggiunta {
+  background: none;
+}
