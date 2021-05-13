@@ -52,7 +52,7 @@ function aggiungiitem(){
 	var nodino=document.createElement("tr");
 	nodino.style.display="table-row";
 	nodino.id=n.toString()
-	var riga=`<td id="n${n.toString()}" onclick='oss("${item.nome}")'><div class="col4">${item.nome}</div></td><td><select name="Categoria" id="categ${n.toString()}"><option value="All" selected="selected">All</option><option value="Arcano">Arcano</option><option value="Fuoco">Fuoco</option><option value="Aria">Aria</option><option value="Acqua">Acqua</option><option value="Terra">Terra</option><option value="Altro">Altro</option></select></td></tr>`
+	var riga=`<td id="n${n.toString()}" onclick='oss("${item.nome}")'><div class="col4">${item.nome}</div></td><td><input type='button' value='-' onclick='rem("n${n.toString()}")'></button></td><td><select name="Categoria" id="categ${n.toString()}"><option value="All" selected="selected">All</option><option value="Arcano">Arcano</option><option value="Fuoco">Fuoco</option><option value="Aria">Aria</option><option value="Acqua">Acqua</option><option value="Terra">Terra</option><option value="Altro">Altro</option></select></td></tr>`
 	padre.appendChild(nodino).innerHTML=riga
 	nom.value="";
 	document.getElementById("accendiamo").onclick="";

@@ -57,17 +57,22 @@ text-align:center;
 line-height:0px;
 }
 
+.allineariga {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 70px;;
+}
 .allinea { 
 float:left; 
 margin-left:1px;
-padding:4px;
 margin:1px;
-width:40px;
-height:15px;
-background-color: #CD853F;
-    border: 2px solid #A0522D;
-text-align:center;
-font-style: italic;
+width:35px;
+}
+
+.iconainv{
+  width:40px;
+  height:40px;
 }
 
 .table-ext thead th {
@@ -88,10 +93,13 @@ text-align: center;
 }
 
 .divinterno{
-height:270px; 
-overflow:auto;
+position: relative;
+margin: 0 auto;
+height:270px;
 width:400px;
+overflow:auto;
 overflow-x:auto;
+border: 3px solid brown;
 }
 
 .divdiario{
@@ -103,7 +111,7 @@ border: 1px solid black;
 }
 
 .col4 {
-width:100px;
+width:200px;
 word-wrap: break-word;
 }
 
@@ -133,7 +141,7 @@ padding:0%;/*va tolto*/
 }
 
 .boxdiario {
-background: grey;
+background: none;
 border: 3px solid black;
 width:600px;  
 margin:1%;
@@ -147,13 +155,6 @@ padding:1%;
   padding: 15px;
   width:700px;
   height:400px;
-}
-
-#divinterno {
-background image:url(invsfondo1.png);
-background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
-  padding: 15px;
 }
 
 a {
